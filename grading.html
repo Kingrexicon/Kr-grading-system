@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KR Grading System</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body">
+
+    <section id="section">
+        <div>
+            <h1 class="px-3 py-4">KR GRADING SYSTEM</h1>
+        </div>
+        <div id="data">
+            <label for="input"> input your score</label>
+            <input type="text" id="scoreValue" placeholder="Enter Your Score">
+            <div id="show"></div>
+        </div>
+        <div> <button onclick="checkScore()" class="btn btn-outline-warning my-4 rounded-pill">Check score</button>
+        </div>
+    </section>
+
+
+    <script>
+        var maxScore = 100
+        function checkScore() {
+            var myScore = Number(scoreValue.value)
+
+            if (myScore >= 70 && myScore <= 100) {
+                show.innerHTML = (" na A you get ")
+                show.style.color = "green"
+
+            }
+
+            else if (myScore >= 60 && myScore <= 69) {
+                show.innerHTML = (" na B you get ")
+                show.style.color = "blue"
+
+            }
+
+            else if (myScore >= 50 && myScore <= 59) {
+                show.innerHTML = (" na C you get ")
+                show.style.color = "yellow"
+
+            }
+
+            else if (myScore >= 45 && myScore <= 49) {
+                show.innerHTML = (" na D you get ")
+                show.style.color = "brown"
+
+            }
+
+            else if (myScore >= 35 && myScore <= 44) {
+                show.innerHTML = (" na E you get ")
+                show.style.color = "violet"
+
+            }
+
+            else if (myScore >= 1 && myScore <= 34) {
+                show.innerHTML = (" na F you get ")
+                // show.style.backgroundColor = "black"
+                show.style.color = "red"
+
+            }
+            else if (myScore == "") {
+                show.innerHTML = (" input your score ")
+                // show.style.color = "black"
+            }
+            else {
+                show.innerHTML = ("invalid input, try am again and see if you no go commot this school ")
+                show.style.color = "white"
+
+            }
+
+        }
+    </script>
+    </body>
+
+</html>

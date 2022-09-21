@@ -1,0 +1,75 @@
+
+    section{
+    border: 1px rgba(255, 255, 255, 0.18) solid;
+    width: max-content;
+    margin: auto;
+    /* margin-top: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+border-radius: 32px;
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+body{
+    background:linear-gradient(grey, rgb(246, 218, 158),rgb(245, 185, 95) );
+    background-image: url(./orsrc45792.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100vh;
+
+}
+
+
+    h1{
+       
+      
+
+        color: rgb(22,167,175);
+     
+    }
+    #data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        background-color:transparent;
+        border: 2px ridge white;
+        color:rgb(253,28,24) ;
+         background-color: rgba(63, 3, 2, 0.551);
+    }
+
+    input:hover{
+        border: 1px solid rgb(211, 247, 244);
+       
+        
+    }
+
+    #show{
+        /* background-color: aqua; */
+        color: rgb(22,167,175);
+          border: 1px rgba(255, 255, 255, 0.18) solid;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+  text-align: center;
+  width: 70%;
+  font-family: cursive;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(20px);
+border-radius: 32px;
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    }
+
+
+    input::placeholder{
+        color:rgb(253,28,24) ;
+    }
